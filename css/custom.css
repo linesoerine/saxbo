@@ -1,0 +1,29 @@
+body{
+    font-family: 'Poppins', sans-serif;
+    font-size: 22px;
+    line-height: 38px;
+}
+
+#picture { 
+    padding: 0; 
+    margin: 0;
+    width: 100%;
+    height: auto;
+}
+
+.thumbnail {
+    position: relative;
+}
+
+.caption {
+    position: absolute;
+    top: 35%;
+    left: 5%;
+    width: 40%;
+}
+
+/* headings */
+h1{
+    size: 30px;
+    text-transform: uppercase;
+}
