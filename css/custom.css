@@ -4,12 +4,13 @@ body{
     line-height: 38px;
 }
 
-#picture { 
-    padding: 0; 
-    margin: 0;
-    width: 100%;
-    height: auto;
+/* Col */
+
+.col-12{
+    padding: 0;
 }
+
+/*Picture on image */
 
 .thumbnail {
     position: relative;
@@ -22,8 +23,35 @@ body{
     width: 40%;
 }
 
+.caption-quotes {
+    position: absolute;
+    top: 35%;
+    left: 90%;
+    width: 100%;
+}
+
+.author{
+    font-size: 16px;
+    font-style: italic;
+}
+
+/* Image */
+.img-fluid{
+    margin: 0;
+    padding:0;
+    width: 100%;
+    height: auto;
+}
+
 /* headings */
 h1{
     size: 30px;
     text-transform: uppercase;
+}
+
+/*quote*/
+.quotation-marks{
+    font-size: 80px;
+    font-family: 'Playball', cursive;
+    line-height: 0px;
 }
