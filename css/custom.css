@@ -10,7 +10,7 @@ body{
     padding: 0;
 }
 
-/*Picture on image */
+/* Picture on image  */
 
 .thumbnail {
     position: relative;
@@ -36,11 +36,22 @@ body{
 }
 
 /* Image */
+
 .img-fluid{
     margin: 0;
     padding:0;
     width: 100%;
     height: auto;
+}
+
+/* background */
+.bg{
+    background-image: radial-gradient(#000 10%, transparent 10%),
+    radial-gradient(#000 10%, transparent 10%);
+    background-color: #fff;
+    background-position: 0 0, 55px 55px;
+    background-size: 10px 10px;
+    width: 100%;
 }
 
 /* headings */
@@ -65,7 +76,14 @@ p .text{
     font-style: 18px;
 }
 
-/*quote*/
+/* styling */
+.uppercase{
+    font-size: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* quote */
 .quotation-marks{
     font-size: 80px;
     font-family: 'Playball', cursive;
@@ -81,3 +99,8 @@ p .text{
 .art-text{
     margin-top: -140px
 }
+
+/* Positions */
+.position-r-0 {
+    right: 0 !important;
+  }
