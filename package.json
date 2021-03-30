@@ -1,0 +1,23 @@
+{
+  "dependencies": {
+    "node-sass": "^5.0.0"
+  },
+  "name": "saxbo",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass -w sass -o public/css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/linesoerine/saxbo.git"
+  },
+  "keywords": [],
+  "author": "Line Sørine Kellner",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/linesoerine/saxbo/issues"
+  },
+  "homepage": "https://github.com/linesoerine/saxbo#readme",
+  "description": ""
+}

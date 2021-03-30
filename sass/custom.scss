@@ -1,0 +1,171 @@
+// Custom.scss
+
+$font-stack: 'Poppins', sans-serif;
+$primary-color: #000;
+$size: 18px;
+$padding: 0;
+$fontweight: 400;
+$styles: bold;
+$tranform: uppercase;
+
+body {
+    font: 100% $font-stack;
+    color: $primary-color;
+    font-size: $size;
+    line-height: 36px;
+}
+/* Colums */
+
+.col-12{
+    padding: $padding;
+}
+
+/* Picture on image  */
+
+.thumbnail {
+    position: relative;
+}
+
+.caption {
+    position: absolute;
+    top: 35%;
+    left: 5%;
+    width: 40%;
+}
+
+.caption-quotes {
+    position: absolute;
+    top: 35%;
+    left: 90%;
+    width: 100%;
+}
+
+.author{
+    font-size: 16px;
+    font-style: italic;
+}
+
+/* Image */
+
+.img-fluid{
+    margin: 0;
+    padding:0;
+    width: 100%;
+    height: auto;
+}
+
+/* background */
+.bg{
+    background-image: radial-gradient(#000 10%, transparent 10%),
+    radial-gradient(#000 10%, transparent 10%);
+    background-color: #fff;
+    background-position: 0 0, 55px 55px;
+    background-size: 10px 10px;
+    width: 100%;
+    padding: 2%
+}
+
+/* headings */
+h1{
+    size: 30px;
+    text-transform: $tranform;
+}
+
+h2{
+    font-size: 22px;
+    font-weight: $styles;
+    margin: 2% 0%
+}
+
+h3{
+    font-size: 20px;
+    font-weight: $fontweight;
+    line-height: 30px;
+}
+
+/* styling */
+.uppercase{
+    font-size: 30px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+/* quote */
+.quotation-marks{
+    font-size: 80px;
+    font-family: 'Playball', cursive;
+}
+/* art */ 
+
+.art{
+    margin-top: 8%;
+}
+
+/* footer */
+.bg-color{
+    background-color: #F0EEED;
+}
+
+h4{
+    size: 30px;
+    font-weight: $fontweight;
+    line-height: 40px;
+}
+
+.small{
+    font-style: 16px;
+}
+
+/* Burger icon */
+
+.overlay {
+    height: 0%;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(240,238,237);
+    background-color: rgba(240,238,237, 1);
+    overflow-y: hidden;
+    transition: 0.5s;
+  }
+  
+  .overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: left;
+    line-height: 50px;
+    margin: 0 10%;
+  }
+  
+  .overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #000;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .overlay a:hover, .overlay a:focus {
+    color: #d7ba70;
+  }
+  
+  .overlay .closebtn {
+    position: absolute;
+    top: 3%;
+    right: 4%;
+    font-size: 30px;
+  }
+  
+  @media screen and (max-height: 450px) {
+    .overlay {overflow-y: auto;}
+    .overlay a {font-size: 20px}
+    .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+    }
+  }

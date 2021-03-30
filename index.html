@@ -11,7 +11,11 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
     
     <!-- Custom styles for this template -->
-     <link rel="stylesheet" type="text/css" href="css/custom.css">
+    <link rel="stylesheet" href="public/css/custom.css">
+
+    <!-- Custom script for this template-->
+
+    <script src="js/script.js"></script>
 
     <!--Google font-->
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -25,9 +29,28 @@
     <div class="container-fluid mt-4 mb-4">
       <div class="row mx-5">
         <div class="col d-flex justify-content-start"><img src="img/logo_saxbo.svg" alt="Saxbo Keramik" width="4%" height="auto"></div>
-        <div class="col d-flex justify-content-end align-items-center"><svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+       
+        <div class="col d-flex justify-content-end align-items-center">
+
+          <div id="myNav" class="overlay">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="overlay-content">
+              <a href="#">Historien</a>
+              <a href="#">Glassur familierne</a>
+              <a href="#">Udstillinger</a>
+              <a href="#">Samarbejdspartner</a>
+              <a href="#">Kontakt</a> 
+            </div>
+          </div>
+          
+            <span style="font-size:30px;cursor:pointer" onclick="openNav()"><svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M0 4.43332H19M0 14.5667H19M0 9.49999H19" stroke="black"/>
+          </svg></span>
+
+          <!-- <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M0 4.43332H19M0 14.5667H19M0 9.49999H19" stroke="black"/>
-      </svg></div>
+      </svg> -->
+    </div>
       </div>
     </div>
 
@@ -106,15 +129,126 @@
 
   <div class="container-fluid bg mt-5 mb-5">
     <div class="row">
-      <div class="col-12 d-flex justify-content-end">
-        <iframe src="https://player.vimeo.com/video/125910242" class="iframe" width="1340" height="860" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+      <div class="col-12 d-flex justify-content-center">
+        <iframe src="https://player.vimeo.com/video/125910242" class="iframe" width="1310" height="830" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+      </div>
+    </div>
+  <div class="container d-flex justify-content-end text-start">
+    <div class="row">
+      <div class="col-2 uppercase">Saxbo channel</div>
+      <div class="col-9 d-flex align-items-end"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum euismod vestibulum lacus. Sed euismod velit mauris, id maximus est vestibulum id. Morbi sed eleifend arcu. Vivamus luctus, turpis.</p></div>
+    </div>
+  </div>
+  </div>
+
+  <!-- partner -->
+
+  <div class="container mb-5">
+    <div class="row">
+      <div class="col-6 m-5"><img src="img/saxbo-jais2.jpeg" width="100%" height="auto" alt="">
+        <h2 class="pt-2"><h2>Jais Nielsen – jævnlig gæsteoptræden for saxbo</h2>
+          <p class="mt-3">Selvom maleriet og glasarbejdet var hans primære force, var hans trang til at udtrykke sig gennem leret ustoppelig.<br>
+            Formet af kubismens franske mestre som Picasso og Matise, var Jais Nielsens kunstneriske udtryk gennemsyret 
+            af hans jyske og religiøse opvækst. Gennem hans ophold på Saxbo
+            skaber han i samspil med keramikeren, monumentale udstillings og unikaværker inspireret af bibelske motiver og scener.
+            Jais Nielsens værker udstilles i dag, i hele verdenen. Det er især hans skulpturelle værker der i disse år opnår høje hammerslag. 
+            Blandt værkerne fra hans tid på Saxbo tæller Jakobs kamp med Englen, Paulus, Moses og  Pottemageren.</p>
+          <a class="readmore text-dark mt-3 mb-3 justify-content-start d-flex " href="#">Vis mig dette</a>
+      </div>
+
+      <div class="art col-5"><img src="img/spaltekande3.jpg" width="100%" height="auto" alt="">
+        <h2 class="pt-2"><h2>Eva Stæhr-Nielsen – Saxbos chefdesigner</h2>
+          <p class="mt-3 text">Som ganske ung studerende på kunsthåndværker skolen i københavn, havde ganske få nok forudset den betydning den daværende Eva Wilhjelm, 
+            senere gift Stæhr-nielsen, ville få for Saxbos profil. Eva kommer til Saxbo i 1932 som volantør for at lære om håndværket. Men Nathalie Krebs finder 
+            hurtigt ud af at Eva besidder et helt unikt talent for det feminine formsprog, hvilket blandt andet ses da hun i 1932 formgiver 
+            Saxbos klassiske spalte- og tekande, hun bliver kort derefter tilknyttet som værkstedets
+            chefdesigner og varetager denne funktion, indtil Saxbo lukker i 1968. </p>
+          <a class="readmore text-dark mt-3 mb-3 justify-content-start d-flex " href="#">Vis mig dette</a>
+      </div>
+
+      <div class="col-6 m-5 "><img src="img/salto.jpg" width="100%" height="auto" alt="">
+        <h2 class="pt-2"><h2>Axel Salto - på kort visit ved saxbo</h2>
+          <p class="mt-3">Efter Nylunds afrejse til Sverige, kommer Axel Salto til værkstedet i Isle. Salto arbejder på Saxbo fra midten af 1930 til 32
+            inden han også forlader værkstedet. Her ses han på knæ og ifærd med at inspicere vindruevasen, sammen med Nathalie Krebs, t.v. 
+            og keramikkeren Oscar Olsen, t.h. </p>
+          <a class="readmore text-dark mt-3 mb-3 justify-content-start d-flex " href="#">Vis mig dette</a>
+      </div>
+
+      <div class="art col-5"><img src="img/gunnernylund.jpeg" width="100%" height="auto" alt="">
+        <h2 class="pt-2"><h2>Fra bing og grøndahl - til nylund og krebs</h2>
+          <p class="mt-3 text">Inden Eva Stæhr Nielsens entré i 1932 havde Saxbo en mere manskulin og klassisk profil. Værkstedet tager i 1929 navn som Nylund og Krebs keramiske værksted, dette efter de to grundlæggere: Nathalie Krebs og Gunnar Nylund. Værkstedet har i opstarten lejet sig ind hos keramikkeren, Patrick Nordströms mod at han også kan anvende det. Nordström dør i 1929, hvorfor fast base etableres i Isle. Den Dansk/finske keramikker
+            Gunnar Nylund står i begyndelsen bag mange af Saxbos værker. Samarbejdet varer dog kort, da Nylund bliver tilbudt arbejde 
+            hos den svenske keramikfabrik, Rörstrand, i 1930.</p>
+          <a class="readmore text-dark mt-3 mb-3 justify-content-start d-flex " href="#">Vis mig dette</a>
       </div>
     </div>
   </div>
-  
 
-  
+<!-- footer -->
 
+<footer class="bg-color text-center text-lg-start">
+  <!-- Grid container -->
+  <div class="container p-4 mt-5">
+    <!--Grid row-->
+    <div class="row">
+
+      <!--Grid column-->
+      <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+
+        <ul class="list-unstyled mb-0">
+          <li><a href="#!" class="text-dark">Kontakt os</a></li>
+          <li><a href="#!" class="text-dark">Åbningstider</a></li>
+          <li><a href="#!" class="text-dark">Bliv medlem</a></li>
+          <li><a href="#!" class="text-dark">SAXBO klubben</a></li>
+          <li><a href="#!" class="text-dark">Om os</a></li>
+        </ul>
+      </div>
+      <!--Grid column-->
+
+      <!--Grid column-->
+      <div class="col-lg-3 col-md-6 mb-4 mb-md-5">
+
+        <ul class="list-unstyled">
+          <li><a href="#!" class="text-dark"><h4>Historien om Saxbo</h4></a></li>
+          <li><a href="#!" class="text-dark"><h4>Glassur familierne</h4></a></li>
+          <li><a href="#!" class="text-dark"><h4>Udstillinger</h4></a></li>
+          <li><a href="#!" class="text-dark"><h4>Samarbejdspartner</h4></a></li>
+        </ul>
+      </div>
+      <!--Grid column-->
+
+      <!--Grid column-->
+        <div class="col-lg-6 col-md-6 mb-4 mb-md-0 text-end">
+
+          <ul class="list-unstyled mb-0">
+            <li><a href="#!" class="text-dark">SAXBO channel</a></li>
+          </ul>
+        </div>
+          <!--Grid column-->
+    </div>
+    <!--Grid row-->
+
+
+  <!-- Copyright -->
+  <div class="container d-flex">
+  <div class="col-lg-3 col-md-6 mb-4 mb-md-0 small">
+    © Copyright SAXBO keramik
+    <a class="text-dark" href="#">Persondata- og cookiepolitik</a>
+  </div>
+
+  <div class="col-lg-9 col-md-6 mb-4 mb-md-0 small d-flex justify-content-end">
+    <ul class="list-unstyled mb-0">
+      <li><a href="#!" class="text-dark">Facebook</a></li>
+      <li><a href="#!" class="text-dark">Instagram</a></li>
+      <li><a href="#!" class="text-dark">Youtube</a></li>
+    </ul>
+  </div>
+</div>
+  <!-- Copyright -->
+</div>
+<!-- Grid container -->
+</footer>
+<!-- Footer -->
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
@@ -124,5 +258,7 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
     -->
+  
+  
   </body>
 </html>
