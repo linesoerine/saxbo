@@ -1,0 +1,56 @@
+.thumbnail {
+    position: relative;
+}
+
+.caption {
+    position: absolute;
+    top: 35%;
+    left: 5%;
+    width: 40%;
+}
+
+.caption-quotes {
+    position: absolute;
+    top: 35%;
+    left: 90%;
+    width: 100%;
+}
+
+.author {
+    font-size: 16px;
+    font-style: italic;
+}
+
+/* Image */
+.image-zoom {
+    width: 100%;
+    height: auto;
+}
+
+.image-zoom img {
+    width: 100%;
+}
+
+.img-fluid {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: auto;
+}
+
+.zoom {
+    transition: transform 0.8s;
+    margin: 0 auto;
+    cursor: pointer;
+}
+
+.zoom:hover {
+    -ms-transform: scale(0.95); /* IE 9 */
+    -webkit-transform: scale(0.95); /* Safari 3-8 */
+    transform: scale(0.95);
+}
+
+.img-logo{
+    width: 4%;
+    height: auto;
+}

@@ -1,0 +1,21 @@
+h1 {
+    size: 30px;
+    text-transform: $text-tranform-uppercase;
+}
+
+h2 {
+    font-size: 22px;
+    margin: 2% 0%;
+}
+
+h3 {
+    font-size: 20px;
+    font-weight: $secondary-font-weight;
+    line-height: 30px;
+}
+
+h4 {
+    size: 30px;
+    font-weight: $secondary-font-weight;
+    line-height: 40px;
+}
